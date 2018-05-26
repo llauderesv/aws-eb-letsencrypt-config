@@ -1,3 +1,3 @@
-#AWS Elastic Beanstalk with LetsEncrypt SSL
+# AWS Elastic Beanstalk with LetsEncrypt Configuration
 
-###This is a sample SSL Configuration in AWS ElasticBeanstalk.
+### This is a sample SSL Configuration in AWS ElasticBeanstalk.
