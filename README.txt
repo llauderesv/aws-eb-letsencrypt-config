@@ -1,1 +1,0 @@
-This is a sample SSL Configuration in AWS ElasticBeanstalk.
