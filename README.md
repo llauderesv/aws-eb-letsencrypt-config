@@ -1,4 +1,4 @@
-## Enabling HTTPS in your AWS Elastic Beanstalk website using [Let's Encrypt](https://letsencrypt.org/)
+## [Let's Encrypt](https://letsencrypt.org/) - Enable HTTPS in your AWS Elastic Beanstalk website.
 
 ### Example usage:
 
@@ -86,7 +86,7 @@ container_commands:
     command: "mv /tmp/certificate_renew /etc/cron.d/certificate_renew"
 ```
 
-3. After that you need to set two environment variables (eg: LETSENCRYPT_EMAIL, LETSENCRYPT_DOMAIN) in your instance because in the code above this will be require.
+3. After that you need to set two environment variables (eg: LETSENCRYPT_EMAIL, LETSENCRYPT_DOMAIN) in your instance because this is required in the code above.
 
 > LETSENCRYPT_DOMAIN - the domain that you want to enable the SSL (eg: mydomain.example.com)
 
