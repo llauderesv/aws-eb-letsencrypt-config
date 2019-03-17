@@ -4,7 +4,7 @@
 
 1. Create `.ebextensions` folder in your root of your project.
 
-2. Create `ssl.config` file under `.ebextensions` folder and paste the following code for enabling HTTPS to your website. This code has an auto renew enabled so that you don't have to worry about when expiring your SSL Certificate.
+2. Create `ssl.config` file under `.ebextensions` folder and paste the following code to enable HTTPS to your website. This code has an auto renew enabled so that you don't have to worry about when expiring your SSL Certificate.
 
 ```
 packages:
@@ -86,8 +86,10 @@ container_commands:
     command: "mv /tmp/certificate_renew /etc/cron.d/certificate_renew"
 ```
 
-3. After that you need to set two environment variables (eg: LETSENCRYPT_EMAIL, LETSENCRYPT_DOMAIN) in your instance because this is required in the code above.
+3. After that you need to setup two environment variables (eg: LETSENCRYPT_EMAIL, LETSENCRYPT_DOMAIN) in your instance because this is required in the code above.
 
 > `LETSENCRYPT_DOMAIN` - the domain that you want to enable the SSL (eg: mydomain.example.com)
 
 > `LETSENCRYPT_EMAIL` - the email that will be used to notify you about your SSL Certificate (example: letsencrypt will notify you when your SSL will expire or etc.)
+
+That's it once you deploy this, HTTPS is already enabled in your website. Enjoy!
